@@ -25,7 +25,7 @@ You need to have a genius api key and in order to get it
 you should have an account in Genius.com.
 
 Just paste your api key in 'C:/Users/your username/.MrPLayer/api_ket.txt'
-
+ All information is provided on the [website](https://AkshatChauhan18.github.io/MrPlayer)
 ---
 1. The command for getting lyrics is 
 

@@ -1,37 +1,25 @@
-## Welcome to GitHub Pages
+### MrPlayer-CLI is the CLI for MrPlayer
 
-You can use the [editor on GitHub](https://github.com/AkshatChauhan18/MrPlayer-CLI/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Suggested using windows terminal becuse it suports
+many languages when extracting lyrics.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Terminal theme 'is One Half Dark'
 
-### Markdown
+<video controls autoplay width="640" height="360" ><source src="CLI.mp4" type="video/mp4"></video>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+For playing song cd to directory where the song is and type this command -
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```powershell
+mpc -ps "song name.mp3"
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+For getting lyrics type this command -
 
-### Jekyll Themes
+```powershell
+mpc -gl "song name" -si "singer name"
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/AkshatChauhan18/MrPlayer-CLI/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+For knowing the source code of MrPlayer-CLI type this command -
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+```powershell
+mpc -sc

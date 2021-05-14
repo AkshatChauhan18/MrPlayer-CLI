@@ -8,7 +8,7 @@ MrPlayer-CLI is the official CLI for MrPlayer app.
 
 ![player](assets/main.png)
 
-All information is provided on [its website.](https://AkshatChauhan18.github.io/MrPlayer)
+All information is provided on [its website.](https://AkshatChauhan18.github.io/MrPlayer-CLI)
 
 The command for playing song is 
 ```powershell
@@ -26,7 +26,7 @@ you should have an account in Genius.com.
 
 Just paste your api key in 'C:/Users/your username/.MrPLayer/api_ket.txt'
 
-All information is provided on the [website](https://AkshatChauhan18.github.io/MrPlayer)
+All information is provided on the [website](https://AkshatChauhan18.github.io/MrPlayer-CLI)
 
 ---
 1. The command for getting lyrics is 
@@ -41,6 +41,6 @@ mpc -gl '<song name>' -si '<singer name'>
 
 ---
 
-For more commands check its [website](https://AkshatChauhan18.github.io/MrPlayer).
+For more commands check its [website](https://AkshatChauhan18.github.io/MrPlayer-CLI).
 
 ***Copyright (c) 2021*** *Akshat Chauhan*

@@ -55,7 +55,7 @@ def player(args):
         rewind_btn = Button("Rewind", handler=rewind)
         exit_btn = Button("Exit", handler=exit_clicked)
         text_area = TextArea(focusable=False, height=10, width=70)
-        timeLabel = Label(text=f'{pygame.mixer.music.get_pos()}')
+
         text_area.text = '''
               ___ _                              ___   __   _______
   /\/\  _ __ / _ \ | __ _ _   _  ___ _ __       / __\ / /   \_  _ /
@@ -65,7 +65,7 @@ def player(args):
                           |___/                                   
 '''
         copy_right_label = Label(text='Copyright (c)\n2021,\nAkshat Chauhan')
-
+        song_name = Label(text=f"Now playing {args.playsong}")
         # Combine all the widgets in a UI.
         # The `Box` object ensures that padding will be inserted around the containing
         # widget. It adapts automatically, unless an explicit `padding` amount is given.
@@ -81,7 +81,18 @@ def player(args):
                                 padding=1,
                                 style="class:left-pane",
                             ),
-                            Box(body=Frame(text_area), padding=1,
+                            Box(
+                                HSplit(
+                                    [
+                                        Box(
+                                            body=Frame(
+                                                text_area
+                                            )
+                                        ),
+                                        Box(
+                                            body=Frame(song_name)
+                                        )
+                            ]) , padding=1,
                                 style="class:right-pane"),
                         ]
                     )
@@ -132,7 +143,7 @@ def player(args):
         console.print('[green]v1.1.0')
     if args.sourcecode:
         console.rule('[bold red]Code')
-        code_file = Syntax.from_path(f"{os.path.expanduser('~')}.MrPlayer\\mpc.py",line_numbers=True) # this file will be created by installer
+        code_file = Syntax.from_path(f"{os.path.expanduser('~')}\\.MrPlayer\\mpc.py",line_numbers=True) # this file will be created by installer
         console.print(code_file)
 
     if args.addtrack:
@@ -180,6 +191,6 @@ if __name__ == '__main__':
     parse.add_argument('-sc', '--sourcecode', help='This command shows the source code.',action='store_true')
     parse.add_argument('-at ', '--addtrack', help='This command is used add sound track to MrPlayer folder.')
     parse.add_argument('-af', '--addfolder', help='This command is used to add all sound tracks of the specified folder to the MrPlayer folder')
-    parse.add_argument('-m', '--movetrack', help= 'This command is used with "-ast" & "-af" to move sound track  instead of copying sound track', action='store_true')
+    parse.add_argument('-m', '--movetrack', help= 'This command is used with "-at" & "-af" to move sound track  instead of copying sound track', action='store_true')
     args = parse.parse_args()
     player(args)

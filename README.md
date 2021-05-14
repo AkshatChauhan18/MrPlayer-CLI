@@ -6,7 +6,7 @@ Lyrics in terminal
 
 MrPlayer-CLI is the official CLI for MrPlayer app.
 
-![player](assets/player.png)
+![player](assets/main.png)
 
 All information is provided on [its website.](https://AkshatChauhan18.github.io/MrPlayer)
 

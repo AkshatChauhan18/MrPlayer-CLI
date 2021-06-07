@@ -28,7 +28,7 @@ you should have an account in Genius. com.
 
 Just paste your api key in 'C:/Users/your username/.MrPLayer/api_ket.txt'
 
-Check [this](Genius_api_key.md) to know steps to get api key
+
 1. For getting lyrics type this command -
 
 ```powershell
@@ -39,6 +39,8 @@ mpc -gl "<song name>"
 ```powershell
 mpc -gl "<song name>" -si "<singer name>"
 ```
+[Click here to know steps to get api key](Genius_api_key.md)
+
 ---
 
 ## Source Code

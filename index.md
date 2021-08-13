@@ -2,10 +2,10 @@
 
 ![player](assets/main.png)
 
-Suggested using windows terminal becuse it suports
+Suggested using windows terminal because it supports
 many languages when extracting lyrics.
 
-Terminal theme 'is One Half Dark'
+Terminal theme is 'One Half Dark'.
 
 ---
 
@@ -52,15 +52,15 @@ mpc -sc
 ```
 ---
 
-## Adding sondtracks and folder to 'MrPlayer-songs'
+## Adding soundtracks and folder to 'MrPlayer-songs'
 
-1. To copy sountrack to MrPlayer-songs folder type this command -
+1. To copy soundtrack to MrPlayer-songs folder type this command -
 
 ```powershell
 mpc -at "<path to track>"
 ```
 
-2. To move sountrack to MrPlayer-songs folder type this command -
+2. To move soundtrack to MrPlayer-songs folder type this command -
 
 ```powershell
 mpc -m -at "<path to track>"
